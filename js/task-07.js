@@ -1,9 +1,9 @@
 const inputChangeEl = document.querySelector('input#font-size-control');
 console.log(inputChangeEl);
 
-const abracadabraEl = document.querySelector('span#text');
-console.log(abracadabraEl);
+const spanEl = document.querySelector('span#text');
+console.log(spanEl);
 
 inputChangeEl.addEventListener('change', event => {
-    abracadabraEl.style.fontSize = `${event.target.value}px`
+    spanEl.style.fontSize = `${event.target.value}px`
 });
