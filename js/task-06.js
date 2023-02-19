@@ -3,7 +3,7 @@ const textInputEl = document.querySelector('#validation-input');
 console.log(textInputEl.getAttribute('data-length'), textInputEl);
 
 textInputEl.addEventListener('blur', event => {
-if (event.target.value.length === textInputEl.getAttribute('data-length')) {
+if (event.target.value.length == textInputEl.getAttribute('data-length')) {
     textInputEl.classList.add('valid')
     
 if (textInputEl.classList.contains('invalid')) {
